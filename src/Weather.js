@@ -74,6 +74,7 @@ export default function Weather() {
               </div>
             </div>
           </section>
+          <br />
           <div className="weekly-forecast">
             <br />
             <h4>Weekly Forecast</h4>
