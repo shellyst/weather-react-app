@@ -28,8 +28,8 @@ export default function Weather() {
                   type="text"
                   placeholder="Enter a city!"
                   size="30"
-                  autofocus="on"
-                  autocomplete="off"
+                  autoFocus="on"
+                  autoComplete="off"
                   className="city-input"
                 />
                 <input type="submit" className="search" value="Search" />
@@ -37,7 +37,10 @@ export default function Weather() {
             </div>
           </div>
           <h1 className="showCity">{weatherData.city}</h1>
-          <button className="localWeather">Local Weather</button>
+
+          <button type="button" className="btn btn-light">
+            Local Weather
+          </button>
           <br />
           <br />
           <section className="mainSection">
