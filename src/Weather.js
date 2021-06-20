@@ -12,7 +12,7 @@ export default function Weather() {
       city: response.data.name,
       description: response.data.weather[0].description,
       temperature: response.data.main.temp,
-      imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
+      imgUrl: "https://openweathermap.org/img/wn/01d@2x.png",
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
@@ -112,7 +112,7 @@ export default function Weather() {
   } else {
     const apiKey = "9ee8642695c7bb9e77c98b6a3388381c";
     let city = "Toronto";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
