@@ -102,6 +102,7 @@ export default function Weather() {
           <a
             href="https://github.com/shellyst/weather-react-app"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced
           </a>{" "}
