@@ -22,7 +22,6 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "9ee8642695c7bb9e77c98b6a3388381c";
-
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -41,31 +40,30 @@ export default function Weather(props) {
       <div>
         <div className="container">
           <div className="weatherApp">
-            <form onSUbmit={handleSubmit}>
-              <div className="row">
-                <div className="col-4">
-                  <div className="dateAndTime">
-                    <p className="date">
-                      <FormattedDate date={weatherData.date} />
-                    </p>
-                  </div>
-                </div>
-                <div className="col-8">
-                  <form className="search-form">
-                    <input
-                      type="text"
-                      placeholder="Enter a city!"
-                      size="30"
-                      autoFocus="on"
-                      onChange={handleCityChange}
-                      autoComplete="off"
-                      className="city-input"
-                    />
-                    <input type="submit" className="search" value="Search" />
-                  </form>
+            <div className="row">
+              <div className="col-4">
+                <div className="dateAndTime">
+                  <p className="date">
+                    <FormattedDate date={weatherData.date} />
+                  </p>
                 </div>
               </div>
-            </form>
+              <div className="col-8">
+                <form onSubmit={handleSubmit} className="search-form">
+                  <input
+                    type="text"
+                    placeholder="Enter a city!"
+                    size="30"
+                    autoFocus="on"
+                    onChange={handleCityChange}
+                    autoComplete="off"
+                    className="city-input"
+                  />
+                  <input type="submit" className="search" value="Search" />
+                </form>
+              </div>
+            </div>
+
             <h1 className="showCity">{weatherData.city}</h1>
 
             <button type="button" className="btn btn-light">
