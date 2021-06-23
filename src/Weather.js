@@ -83,7 +83,7 @@ export default function Weather(props) {
           </div>
         </div>
         <p className="text-center">
-          This project is created by Michelle Stone and is{" "}
+          This project was created by Michelle Stone and is{" "}
           <a
             href="https://github.com/shellyst/weather-react-app"
             rel="noreferrer"
