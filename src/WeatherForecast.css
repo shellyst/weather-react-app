@@ -1,0 +1,20 @@
+.weekly-forecast {
+  background: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.weather-forecast {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+  color: #000;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}

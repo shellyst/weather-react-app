@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
         <div className="row align-items-center">
           <div className="col-2">
             <div className="float-left">
-              <WeatherIcon code={props.data.icon} />
+              <WeatherIcon code={props.data.icon} size={55} />
             </div>
           </div>
           <div className="col-2">
