@@ -4,13 +4,11 @@ import "./WeatherForecast.css";
 import axios from "axios";
 
 export default function WeatherDailyForecast(props) {
-  function handleResponse(response) {
-    console.log(response.data);
-  }
+  function handleResponse(response) {}
   console.log(props);
   let apiKey = "9ee8642695c7bb9e77c98b6a3388381c";
-  let longitude = props.coordinates.lon;
-  let latitude = props.coordinates.lat;
+  let longitude = 40.3;
+  let latitude = 70.3;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
   axios.get(apiUrl).then(handleResponse);
