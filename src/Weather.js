@@ -79,7 +79,7 @@ export default function Weather(props) {
             <br />
 
             <div className="weekly-forecast">
-              <WeatherDailyForecast coordinates={weatherData.coord} />
+              <WeatherDailyForecast coordinates={weatherData.coordinates} />
             </div>
             <br />
           </div>
